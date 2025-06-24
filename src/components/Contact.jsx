@@ -49,6 +49,7 @@ export const Contact = () => {
             method="POST"
             data-netlify="true"
             className="flex flex-col gap-6"
+            netlify
           >
             <input type="hidden" name="form-name" value="contact" />
 
