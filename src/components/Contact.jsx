@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { motion } from "framer-motion";
 
 export const Contact = () => {
@@ -11,8 +10,14 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí iría la lógica para enviar email con EmailJS u otro servicio
-    console.log("Form submitted:", form);
+
+    const subject = encodeURIComponent(
+      `Contact from ${form.name} (${form.email})`
+    );
+    const body = encodeURIComponent(form.message);
+    const mailtoLink = `mailto:jesusjho26@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -45,42 +50,40 @@ export const Contact = () => {
 
           {/* Form */}
           <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            action="/thank-you.html"
+            onSubmit={handleSubmit}
             className="flex flex-col gap-6"
+            noValidate
           >
-            {/* CAMPO OCULTO */}
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
-
             <input
               type="text"
               name="name"
               placeholder="Your name"
               required
-              className="..."
+              value={form.name}
+              onChange={handleChange}
+              className="border-b border-gray-500 px-1 py-2 bg-transparent placeholder-gray-500 focus:outline-none"
             />
             <input
               type="email"
               name="email"
               placeholder="Your email"
               required
-              className="..."
+              value={form.email}
+              onChange={handleChange}
+              className="border-b border-gray-500 px-1 py-2 bg-transparent placeholder-gray-500 focus:outline-none"
             />
             <textarea
               name="message"
               rows="4"
               placeholder="Your message"
               required
-              className="..."
+              value={form.message}
+              onChange={handleChange}
+              className="border-b border-gray-500 px-1 py-2 bg-transparent placeholder-gray-500 focus:outline-none resize-none"
             />
-
             <button
               type="submit"
-              className="border border-gray-800 px-6 py-2 font-semibold hover:bg-gray-800 hover:text-white transition-colors w-max"
+              className="border border-gray-800 px-6 py-2 text-sm font-semibold hover:bg-gray-800 hover:text-white transition-colors w-max"
             >
               Send Message
             </button>
