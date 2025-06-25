@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaGithub,
   FaMedium,
+  FaCoffee
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -111,11 +112,11 @@ export const Hero = () => {
                 <FaLinkedin className="hover:text-gray-900 transition" />
               </a>
               <a
-                href="https://medium.com/@jesusjo"
+                href="https://buymeacoffee.com/jesusjo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaMedium className="hover:text-gray-900 transition" />
+                <FaCoffee className="hover:text-gray-900 transition" />
               </a>
             </div>
           </motion.div>
