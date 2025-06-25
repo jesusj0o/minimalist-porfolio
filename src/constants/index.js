@@ -7,6 +7,10 @@ export const links = [
     href: "#experience",
     label: "Experience*",
   },
+   {
+    href: "#contact",
+    label: "Contact*",
+  },
 ];
 
 export const projects = [

@@ -15,7 +15,10 @@ export const Contact = () => {
       `Contact from ${form.name} (${form.email})`
     );
     const body = encodeURIComponent(form.message);
-    const mailtoLink = `mailto:jesusjho26@gmail.com?subject=${subject}&body=${body}`;
+
+    const email = process.env.REACT_APP_CONTACT_EMAIL;
+
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink;
   };
