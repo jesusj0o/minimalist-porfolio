@@ -48,35 +48,39 @@ export const Contact = () => {
             name="contact"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/thank-you.html"
             className="flex flex-col gap-6"
-            netlify
           >
+            {/* CAMPO OCULTO */}
             <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
 
             <input
               type="text"
               name="name"
               placeholder="Your name"
               required
-              className="border-b border-gray-500 px-1 py-2 bg-transparent placeholder-gray-500 focus:outline-none"
+              className="..."
             />
             <input
               type="email"
               name="email"
               placeholder="Your email"
               required
-              className="border-b border-gray-500 px-1 py-2 bg-transparent placeholder-gray-500 focus:outline-none"
+              className="..."
             />
             <textarea
               name="message"
               rows="4"
               placeholder="Your message"
               required
-              className="border-b border-gray-500 px-1 py-2 bg-transparent placeholder-gray-500 focus:outline-none resize-none"
+              className="..."
             />
+
             <button
               type="submit"
-              className="border border-gray-800 px-6 py-2 text-sm font-semibold hover:bg-gray-800 hover:text-white transition-colors w-max"
+              className="border border-gray-800 px-6 py-2 font-semibold hover:bg-gray-800 hover:text-white transition-colors w-max"
             >
               Send Message
             </button>

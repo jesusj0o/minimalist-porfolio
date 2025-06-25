@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #1f2937; /* Tailwind's gray-800 */
+        background-color: #f9fafb; /* Tailwind's gray-50 */
+        padding: 2rem;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 480px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #4b5563; /* Tailwind's gray-600 */
+        margin-bottom: 2rem;
+      }
+
+      a {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        color: #1f2937;
+        text-decoration: none;
+        border: 1px solid #1f2937;
+        transition: background-color 0.2s ease, color 0.2s ease;
+      }
+
+      a:hover {
+        background-color: #1f2937;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thanks for your message!</h1>
+      <p>I’ll get back to you as soon as I can.</p>
+      <a href="/">← Back to home</a>
+    </div>
+  </body>
+</html>
