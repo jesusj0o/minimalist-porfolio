@@ -97,21 +97,21 @@ export const Hero = () => {
             {/* Redes sociales */}
             <div className="mt-4 flex gap-4 text-2xl text-gray-700 justify-center sm:justify-start">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/jesusj0o"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGithub className="hover:text-gray-900 transition" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/jesus-jo-255721210/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className="hover:text-gray-900 transition" />
               </a>
               <a
-                href="https://medium.com/@yourusername"
+                href="https://medium.com/@jesusjo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
