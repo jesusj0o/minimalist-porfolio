@@ -4,10 +4,10 @@ import {
   FaComments,
   FaLinkedin,
   FaGithub,
-  FaMedium,
   FaCoffee
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { ContactModal } from "./ContacModal";
 
 const UnderlinedLink = ({ icon: Icon, text, href }) => {
   return (
@@ -134,11 +134,7 @@ export const Hero = () => {
               href="Joresume.pdf"
               download
             />  
-            <UnderlinedLink
-              icon={FaComments}
-              text="Or have chat"
-              href="https://www.linkedin.com/in/jesus-jo-255721210/"
-            />
+            <ContactModal/>
           </motion.div>
         </div>
 
