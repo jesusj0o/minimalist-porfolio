@@ -65,7 +65,7 @@ export const ContactModal = () => {
                   <p className="font-extrabold text-sm mb-1">
                     Software Engineer | JavaScript Fullstack
                   </p>
-                  <p className="text-sm text-gray-800">jesusjo26@gmail.com</p>
+                  <p className="text-sm text-gray-800">jesusjho26@gmail.com</p>
                   <p className="text-sm text-gray-800">+52 633 129 2756</p>
                 </div>
               </Dialog.Panel>
