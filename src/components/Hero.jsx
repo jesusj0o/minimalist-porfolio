@@ -131,7 +131,7 @@ export const Hero = () => {
             <UnderlinedLink
               icon={FaFileAlt}
               text="Get my resume **"
-              href="Joresume.pdf"
+              href="JesusJoFront-End.pdf"
               download
             />  
             <ContactModal/>
